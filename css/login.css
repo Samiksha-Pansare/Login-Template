@@ -210,7 +210,7 @@ input[type=text]:focus{
     width: 300px;
   }
   .login-container{
-    height: 120% !important;
+    height: 150% !important;
   }  
 }
 
