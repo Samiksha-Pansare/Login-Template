@@ -203,17 +203,15 @@ input[type=text]:focus{
     width: 50%;
   }
   .grp {
-    width: 50%;
     height: 150px !important;
     position: relative;
   }
   .login-form {
     width: 300px;
   }
-  .login-box {
-    width: 100% !important; 
-  }
-  
+  .login-container{
+    height: 10vh !important;
+  }  
 }
 
 /* // Medium devices (tablets, 768px and up) */
