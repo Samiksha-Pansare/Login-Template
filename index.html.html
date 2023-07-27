@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Healing Portal</title>
+    </head>
+    <body>
+        <div class='login-container'>
+            <img src="./images/wave1.svg" class='wave1'/>
+            
+            <div class="container" style="max-height: 650px;">
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <div class=" my-5 d-flex justify-content-center" style="background: transparent;border: none;">
+    
+                    <form class="login-form card-body cardbody-color p-lg-5" >
+    
+                      <div class="text-center">
+                        
+                      <img src="./images/logo.svg"/>
+                      </div>
+                      <div class="text-center">
+                      <h3 class="login-txt">The Healing Portal India</h3>
+                      </div>
+                      <div class="">
+                        <div class="mb-3 d-flex justify-content-between ">
+                          <label class="user login-box">
+                            <input class='login-input' type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                            placeholder="User Name" value="" style="background: transparent;height: 45px;"/>
+                          </label>
+                          
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between" style="background: transparent;max-height: 45px;">
+                          <label for="password" class="lock login-box" style="margin-right: 2px;height: 45px;padding-bottom: 5px;">
+                          <input class='login-input' type="password" class="form-control" id="password" placeholder="Password" value="" style="background: transparent;border: none;width:90%;"/>
+                          <button type="button" id="btnToggle" class="toggle" style="padding: 0px;">
+                            <i id="eyeIcon" class="fa fa-eye"></i>
+                          </button>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="text-center d-flex justify-content-center">
+                        <button id="login" type="button" class="logout-btn btn btn-dark log-out">Log In</button>
+                      </div>
+                      <div class="text-center d-flex justify-content-between">
+                        <div>
+                          <input type="checkbox" checked={cred.rememberMe} value={cred.rememberMe} />
+                          <h5 style="font-size: 16px;margin-top: 4px;display: inline-block;">Remember me</h5>
+                        </div>
+                        <div>
+                          <a href="/forgot-password"><h5 style="font-size: 16px;margin-top: 4px;color: #000000;">Forgot Password?</h5></a>                          
+                        </div>                    
+                      </div>                  
+                    </form>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+            <img src="./images/group.svg" class='grp'></img>
+            
+        </div>    
+        <script>
+          const password = document.getElementById('password');
+toggle = document.getElementById("btnToggle"),
+icon = document.getElementById("eyeIcon");
+
+function togglePassword() {
+  console.log("Here in function")
+  if (password.type === "password") {
+    password.type = "text";
+    icon.classList.add("fa-eye-slash");
+    //toggle.innerHTML = 'hide';
+  } else {
+    password.type = "password";
+    icon.classList.remove("fa-eye-slash");
+    //toggle.innerHTML = 'show';
+  }
+}
+toggle.addEventListener("click", togglePassword, false);
+        </script>  
+        <script src="/static/js/login.js" type="module" ></script>  
+    </body>
+    
+    
+</html>

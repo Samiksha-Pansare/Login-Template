@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+  min-height: 100vh !important;
+  overflow: hidden;
+}
+.wave1{
+  /* height: 80vw !important; */
+  right: 0%;
+  width: 55%;
+  position: absolute;
+}
+
+
+.grp{
+  z-index: 1;
+  position: absolute;
+  bottom: -20%;
+}
+.login-container {
+  /* background-color: #FFFCF2; */
+  margin: 0% !important;
+  width: 100vw !important;
+}
+.text-center {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login-txt {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+.login-input{
+  height: 45px;
+  border: none !important;
+  background: transparent !important;
+}
+.login-box{
+  width: 300px;
+  border: 1px solid #000000 !important;
+  border-radius: 4px !important;
+}
+.login-form {
+  max-width: 400px;
+}
+
+.remember-me-forgot-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.remember-me{
+  padding-right: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+/* identical to box height */
+
+  text-align: center;
+
+  color: black;
+
+}
+.logout-btn{
+  width: 100% !important;
+  height: 45px;
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Toggle eye for password*/
+.toggle {
+  background: none;
+  border: none !important;
+  color: #337ab7;
+  /*display: none;*/
+  /*font-size: .9em;*/
+  font-weight: 600;
+  /*padding: .5em;*/
+  z-index: 9;
+}
+.toggle:focus
+{
+  border: none !important;
+}
+.toggle::selection
+{
+  border: none !important;
+}
+label {
+  position: relative;
+}
+
+label.lock:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  bottom: 0;
+  margin-right: 6px;
+  width: 20px;
+  background: url("/images/lock.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  
+}
+label.user:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("/images/user-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  
+}
+
+input {
+  padding: 10px 30px;
+}
+input::-webkit-input-placeholder { 
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+text-align: start;
+text-transform: uppercase;
+
+color: #000000;
+
+  }
+  
+ input::-moz-placeholder  { 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align:start;
+  text-transform: uppercase;
+  color: #000000;
+
+  }
+  
+  input:-ms-input-placeholder  { 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+  }
+  input:focus {
+  /* Remove the outline when the input is selected */
+  outline: none;
+}
+#btnToggle:focus {
+  outline: none;
+}
+input[type=text]:focus{
+  outline: none !important;
+  background: transparent;
+  border: none;
+}
+/* Responsive Media Queries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) 
+{
+  .wave1{
+    scale: 1;
+    width: 50%;
+  }
+  .grp {
+    width: 50%;
+    height: 150px !important;
+    position: relative;
+  }
+  .login-form {
+    width: 300px;
+  }
+  .login-box {
+    width: 100% !important; 
+  }
+  
+}
+
+/* // Medium devices (tablets, 768px and up) */
+ @media (min-width: 576px) and (max-width: 821px)
+ {
+  .grp {
+    position: relative;
+  }
+  .login-box {
+    width: 100% !important; 
+  }
+        
+ }
+
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+ /* // Extra large devices (large desktops, 1200px and up) */
+ @media screen and (min-width: 1400px) {
+       
+
+  }
+  /* @media screen and (min-width: 1600px) {
+	.container {
+	  width: 1570px;
+	}
+  }
+  @media screen and (min-width: 1900px) {
+	.container {
+	  width: 1870px;
+	}
+  } */
+@media (min-width: 1900px)
+{
+}
