@@ -203,7 +203,7 @@ input[type=text]:focus{
     width: 50%;
   }
   .grp {
-    height: 250px !important;
+    height: 300px !important;
     position: relative;
   }
   .login-form {
