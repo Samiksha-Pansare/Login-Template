@@ -40,7 +40,7 @@ body{
   background: transparent !important;
 }
 .login-box{
-  width: 300px;
+  width: 100%;
   border: 1px solid #000000 !important;
   border-radius: 4px !important;
 }
@@ -203,11 +203,12 @@ input[type=text]:focus{
     width: 50%;
   }
   .grp {
-    height: 300px !important;
-    position: relative;
+    display: none;
+    /* height: 250px !important;
+    position: relative; */
   }
   .login-form {
-    width: 300px;
+    width: 100%;
   }
   .login-container{
     height: 150% !important;
